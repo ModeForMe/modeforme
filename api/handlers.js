@@ -6,6 +6,10 @@ module.exports = {
 
     designer: function(request, reply) {
         reply.file('./public/views/designer.html');
+    },
+
+    product: function(request, reply) {
+        reply.file('./public/views/product.html');
     }
 
 };
