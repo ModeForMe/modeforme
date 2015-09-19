@@ -101,9 +101,44 @@ nav {
       background-color: black;
       color: white; }
 
+.designers {
+  background-color: #FAFAFA; }
+  .designers h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    text-align: center; }
+  .designers .designer-wrapper {
+    display: inline-block;
+    position: relative; }
+  .designers img.designer-photo {
+    box-sizing: border-box;
+    border: 2px solid #FAFAFA;
+    margin-top: 20px;
+    width: 100%; }
+    .designers img.designer-photo:hover {
+      opacity: 0.5; }
+  .designers a {
+    color: black;
+    text-decoration: none; }
+  .designers h3 {
+    letter-spacing: 2px;
+    padding: 15px; }
+
 @media (max-width: 800px) {
   .splash-text {
     font-size: 24px;
     width: 400px; } }
+.row {
+  position: relative; }
+
+[class*='col-'] {
+  display: inline-block; }
+
+.col-2 {
+  width: 49%; }
+
+.col-3 {
+  width: 32.9%; }
 
 /*# sourceMappingURL=main.css.map */
