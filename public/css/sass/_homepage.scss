@@ -1,0 +1,33 @@
+.get-started {
+	background-color: white;
+	border: 1px solid black;
+	margin-top: 5px;
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+.splash {
+	background-image: url('../images/home-image.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.splash-text {
+	background-color: white;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 25%;
+	padding-left: 10%;
+    padding-right: 10%;
+	padding-top: 12%;
+	text-align: center;
+	top: 30%;
+	width: 700px;
+	& h3 {
+		font-size: large;
+	}
+}
