@@ -4,6 +4,7 @@
   "description": "eco fashion",
   "main": "index.js",
   "scripts": {
+    "nodemon": "nodemon -e html,css,js"
   },
   "repository": {
     "type": "git",

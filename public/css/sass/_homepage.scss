@@ -1,0 +1,44 @@
+.splash {
+	background-image: url('../images/home-image.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.splash-text {
+	background-color: white;
+	box-sizing: border-box;
+	font-size: 24px;
+	height: 300px;
+	margin: 15% auto 0 auto;
+	padding-left: 30px;
+    padding-right: 30px;
+	padding-top: 100px;
+	text-align: center;
+	width: 700px;
+	& h3 {
+		font-size: large;
+	}
+	.get-started {
+		background-color: black;
+		border: 2px solid black;
+		color: white;
+		cursor: pointer;
+		font-size: 20px;
+		letter-spacing: 3px;
+		margin-top: 30px;
+		padding: 15px 15px;
+		width: 220px;
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+
+	.splash-text {
+		font-size: 24px;
+		width: 400px;
+	}
+}
