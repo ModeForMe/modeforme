@@ -78,11 +78,11 @@ nav {
   background-color: white;
   box-sizing: border-box;
   font-size: 24px;
-  height: 350px;
+  height: 390px;
   margin: 15% auto 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 85px;
   text-align: center;
   width: 700px; }
   .splash-text h3 {
@@ -93,9 +93,13 @@ nav {
     height: 50px;
     margin-top: 30px;
     text-align: center;
-    width: 350px; }
+    width: 400px; }
   .splash-text .response {
     font-size: 14px; }
+  .splash-text .disclaimer {
+    color: gray;
+    font-size: 12px;
+    margin: 5px auto; }
   .splash-text .button {
     background-color: white;
     border: 2px solid black;
@@ -106,12 +110,23 @@ nav {
     letter-spacing: 3px;
     margin-top: 10px;
     padding: 15px 15px;
-    width: 220px; }
+    text-align: center;
+    width: 250px; }
     .splash-text .button:hover {
       background-color: black;
       color: white; }
   .splash-text .clear {
     display: inline-block; }
+
+.introduction {
+  background-color: #FAFAFA;
+  border: 2px solid black;
+  box-sizing: border-box;
+  height: 300px;
+  font-size: 20px;
+  margin: 150px;
+  padding: 100px 150px;
+  text-align: center; }
 
 @media (max-width: 800px) {
   .splash-text {
