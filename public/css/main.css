@@ -118,14 +118,16 @@ nav {
   .splash-text .clear {
     display: inline-block; }
 
+.read-more {
+  background-color: #FAFAFA; }
+
 .introduction {
-  background-color: #FAFAFA;
-  border: 2px solid black;
+  background-color: white;
   box-sizing: border-box;
-  height: 300px;
+  height: auto;
   font-size: 20px;
-  margin: 150px;
-  padding: 100px 150px;
+  line-height: 1.5;
+  padding: 150px 200px;
   text-align: center; }
 
 @media (max-width: 800px) {
