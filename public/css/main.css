@@ -42,11 +42,11 @@ table {
   border-spacing: 0; }
 
 html {
+  background-color: #FAFAFA;
   font-family: Source Sans Pro; }
 
 nav {
   background-color: white;
-  border-bottom: 1px solid grey;
   height: 80px; }
 
 .logo {
@@ -55,14 +55,19 @@ nav {
   padding: 5px; }
 
 .hamburger {
-  display: none;
   float: right;
   height: 40px;
   padding: 20px;
   width: 40px; }
+  .hamburger:hover {
+    cursor: pointer; }
 
 .mobile-nav {
   display: none; }
+
+footer {
+  background-color: white;
+  height: 200px; }
 
 .splash {
   background-image: url("../images/home-image.jpg");
@@ -100,5 +105,83 @@ nav {
   .splash-text {
     font-size: 24px;
     width: 400px; } }
+.designer-header {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%; }
+  .designer-header .first, .designer-header .second {
+    background-size: cover;
+    display: inline-block;
+    height: 90vh;
+    margin: 0;
+    object-fit: cover;
+    width: 49.8%; }
+  .designer-header .first {
+    background-image: url("https://movieshoovy.files.wordpress.com/2014/04/designer-maria-b-working-on-a-sketch-for-her-psfw-2014-collection-f.jpg"); }
+  .designer-header .second {
+    background-image: url("https://normalityandme.files.wordpress.com/2012/02/anna2.jpg");
+    float: right; }
+
+.designer-title {
+  background-color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 3px;
+  font-size: 80px;
+  left: 28%;
+  padding: 50px;
+  position: absolute;
+  text-align: center;
+  top: 40%; }
+
+.designer-story {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 60px;
+  margin: 60px 300px 60px 150px; }
+
+h4 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 0 0 20px 80px; }
+
+.designer-product-grid {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%; }
+  .designer-product-grid img {
+    border: 2px solid #FAFAFA;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+    width: 32.9%; }
+  .designer-product-grid img:hover {
+    cursor: pointer;
+    opacity: 0.5; }
+
+@media (max-width: 1200px) {
+  .designer-header .first {
+    width: 100%; }
+  .designer-header .second {
+    display: none; }
+
+  .designer-story {
+    padding: 30px;
+    margin: 30px 100px 30px 60px; } }
+@media (max-width: 850px) {
+  .designer-story {
+    padding: 30px;
+    margin: 20px 100px 20px 60px; } }
+@media (max-width: 1000px) {
+  .designer-product-grid img {
+    width: 49%; } }
+@media (max-width: 700px) {
+  .designer-product-grid img {
+    width: 100%; }
+
+  .designer-story {
+    padding: 20px;
+    margin: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,5 @@
 nav {
     background-color: white;
-    border-bottom: 1px solid grey;
     height: 80px;
 }
 
@@ -11,11 +10,14 @@ nav {
 }
 
 .hamburger {
-    display: none;
     float: right;
     height: 40px;
     padding: 20px;
     width: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .mobile-nav {
