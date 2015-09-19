@@ -41,4 +41,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+nav {
+  border-bottom: 1px solid grey;
+  height: 80px; }
+
+.logo {
+  height: 60px;
+  float: left;
+  padding: 10px; }
+
+.hamburger {
+  float: right;
+  height: 40px;
+  padding: 20px;
+  width: 40px; }
+
+.mobile-nav {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
