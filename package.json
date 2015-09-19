@@ -1,0 +1,28 @@
+{
+  "name": "offlimits",
+  "version": "1.0.0",
+  "description": "eco fashion",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msmichellegar/offlimits.git"
+  },
+  "keywords": [
+    "eco",
+    "fashion"
+  ],
+  "author": "msmichellegar nofootnotes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msmichellegar/offlimits/issues"
+  },
+  "homepage": "https://github.com/msmichellegar/offlimits#readme",
+  "dependencies": {
+    "hapi": "8.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.5.1"
+  }
+}
