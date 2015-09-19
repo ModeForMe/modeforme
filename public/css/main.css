@@ -61,6 +61,11 @@ nav {
   padding: 20px;
   width: 40px; }
 
+.twitter {
+  float: right;
+  height: 35px;
+  padding: 20px; }
+
 .mobile-nav {
   display: none; }
 
@@ -83,9 +88,9 @@ nav {
   .splash-text h3 {
     font-size: large; }
   .splash-text .get-started {
-    background-color: black;
+    background-color: white;
     border: 2px solid black;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 20px;
     letter-spacing: 3px;
@@ -93,8 +98,8 @@ nav {
     padding: 15px 15px;
     width: 220px; }
     .splash-text .get-started:hover {
-      background-color: white;
-      color: black; }
+      background-color: black;
+      color: white; }
 
 @media (max-width: 800px) {
   .splash-text {
