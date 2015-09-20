@@ -21,5 +21,25 @@ nav {
 }
 
 .mobile-nav {
+    background-color: white;
     display: none;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    z-index: -10;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    p {
+        border-top: 1px solid #F3F3F3;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    p:hover {
+        cursor: pointer;
+    }
 }
