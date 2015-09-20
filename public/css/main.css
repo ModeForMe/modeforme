@@ -108,6 +108,7 @@ footer {
       letter-spacing: 2px; }
 
 .splash {
+  background-attachment: fixed;
   background-image: url("../images/home-image.jpg");
   background-size: cover;
   height: 100vh; }
@@ -277,7 +278,7 @@ h4 {
     padding: 20px; } }
 @media (max-width: 800px) {
   .designer-title {
-    font-size: 60px;
+    font-size: 40px;
     left: 10%;
     right: 10%; } }
 @media (max-width: 1200px) {
@@ -397,7 +398,8 @@ h4 {
   .product-header .product-first {
     background-image: none; }
     .product-header .product-first img {
-      display: inline-block; }
+      display: inline-block;
+      padding-left: 8%; }
 
   .product-header .product-second {
     width: 50%; }
@@ -413,6 +415,7 @@ h4 {
   .product-header .product-first img {
     display: block;
     height: 300px;
+    padding-left: 0;
     padding-top: 40px;
     width: 300px; }
 
