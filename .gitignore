@@ -27,4 +27,5 @@ build/Release
 node_modules
 
 
-public/css/.sass-cache
+public/css/.sass-cache/*
+public/css/main.css.map

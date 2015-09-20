@@ -1,0 +1,15 @@
+.row {
+    position: relative;
+}
+
+[class*='col-'] {
+    display: inline-block;
+}
+
+.col-2 {
+    width: 49%;
+}
+
+.col-3 {
+    width: 32.9%;
+}

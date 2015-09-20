@@ -10,6 +10,18 @@ module.exports = [
 
   {
     method: 'GET',
+    path: '/designer',
+    handler: handlers.designer
+  },
+
+  {
+    method: 'GET',
+    path: '/product',
+    handler: handlers.product
+  },
+
+  {
+    method: 'GET',
     path: '/static/{path*}',
     handler:  {
       directory: {

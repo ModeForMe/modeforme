@@ -1,6 +1,5 @@
 nav {
     background-color: white;
-    border-bottom: 1px solid grey;
     height: 80px;
 }
 
@@ -8,14 +7,22 @@ nav {
     height: 60px;
     float: left;
     padding: 5px;
+    @media (max-width: 500px) {
+        height: 40px;
+        padding-top: 20px;
+    }
 }
 
 .hamburger {
-    display: none;
     float: right;
     height: 40px;
     padding: 20px;
     width: 40px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
 }
 
 .twitter, .facebook {
@@ -24,6 +31,26 @@ nav {
     padding: 20px;
 }
 
-.mobile-nav {
-    display: none;
-}
+    .mobile-nav {
+        background-color: white;
+        display: none;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        z-index: -10;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        p {
+            border-top: 1px solid #F3F3F3;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        p:hover {
+            cursor: pointer;
+        }
+    }
