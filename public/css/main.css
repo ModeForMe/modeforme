@@ -41,6 +41,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  -webkit-appearance: none; }
+
 html {
   background-color: #FAFAFA;
   font-family: Source Sans Pro; }
@@ -199,6 +202,8 @@ footer {
     height: 350px;
     padding: 40px;
     width: 400px; }
+    .splash-text .required-email {
+      width: 300px; }
 
   .introduction {
     padding: 50px; } }
@@ -378,7 +383,7 @@ h4 {
   .product-header .product-first {
     background-image: none; }
     .product-header .product-first img {
-      display: block; }
+      display: inline-block; }
 
   .product-header .product-second {
     width: 50%; }
@@ -392,11 +397,22 @@ h4 {
     height: auto; } }
 @media (max-width: 550px) {
   .product-header .product-first img {
+    display: block;
     height: 300px;
     padding-top: 40px;
     width: 300px; }
 
+  .product-header .product-second {
+    float: right;
+    height: auto; }
+    .product-header .product-second img {
+      width: 200px; }
+
+  .product-header button {
+    width: 250px; }
+
   .product-info {
+    float: none;
     margin: 0;
     padding: 0; } }
 .row {
