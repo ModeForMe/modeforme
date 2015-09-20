@@ -364,7 +364,7 @@ h4 {
       letter-spacing: 2px; }
     .product-header .goal-box img {
       max-width: 400px; }
-  .product-header button {
+  .product-header .product-second .button {
     background-color: white;
     border: 2px solid black;
     color: black;
@@ -374,10 +374,19 @@ h4 {
     letter-spacing: 3px;
     margin: 20px auto 0 auto;
     padding: 15px 15px;
-    width: 300px; }
-    .product-header button:hover {
+    width: 350px; }
+    .product-header .product-second .button:hover {
       background-color: black;
       color: white; }
+  .product-header .product-second .required-email {
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    width: 400px; }
 
 @media (max-width: 1300px) {
   .product-header .product-first {
@@ -405,6 +414,9 @@ h4 {
   .product-header .product-second {
     float: right;
     height: auto; }
+    .product-header .product-second .button {
+      font-size: 14px;
+      width: 250px; }
     .product-header .product-second img {
       width: 200px; }
 
