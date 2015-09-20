@@ -7,6 +7,10 @@ nav {
     height: 60px;
     float: left;
     padding: 5px;
+    @media (max-width: 500px) {
+        height: 40px;
+        padding-top: 20px;
+    }
 }
 
 .hamburger {
@@ -18,12 +22,6 @@ nav {
     &:hover {
         cursor: pointer;
     }
-}
-
-.twitter {
-    float: right;
-    height: 35px;
-    padding: 20px;
 }
 
 .mobile-nav {
