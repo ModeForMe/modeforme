@@ -110,7 +110,7 @@
         background-image: none;
 
         img {
-            display: block;
+            display: inline-block;
         }
     }
 
@@ -136,18 +136,35 @@
 
 }
 
+
+
 @media (max-width: 550px) {
 
     .product-header .product-first {
 
         img {
+            display: block;
             height: 300px;
             padding-top: 40px;
             width: 300px;
         }
     }
 
+    .product-header .product-second {
+        float: right;
+        height: auto;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .product-header button {
+        width: 250px;
+    }
+
     .product-info {
+        float: none;
         margin: 0;
         padding: 0;
     }
