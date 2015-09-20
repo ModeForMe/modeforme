@@ -85,21 +85,34 @@
         }
     }
 
-    button {
-        background-color: white;
-		border: 2px solid black;
-		color: black;
-		cursor: pointer;
-        display: block;
-		font-size: 20px;
-		letter-spacing: 3px;
-		margin: 20px auto 0 auto;
-		padding: 15px 15px;
-		width: 300px;
-		&:hover {
-			background-color: black;
-			color: white;
-		}
+    .product-second  {
+
+        .button {
+            background-color: white;
+    		border: 2px solid black;
+    		color: black;
+    		cursor: pointer;
+            display: block;
+    		font-size: 20px;
+    		letter-spacing: 3px;
+    		margin: 20px auto 0 auto;
+    		padding: 15px 15px;
+    		width: 350px;
+    		&:hover {
+    			background-color: black;
+    			color: white;
+    		}
+        }
+        .required-email {
+            display: block;
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            width: 400px;
+        }
     }
 }
 
@@ -152,6 +165,11 @@
     .product-header .product-second {
         float: right;
         height: auto;
+
+        .button {
+            font-size: 14px;
+            width: 250px;
+        }
 
         img {
             width: 200px;
