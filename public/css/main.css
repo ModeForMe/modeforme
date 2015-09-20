@@ -161,7 +161,7 @@ footer {
   height: auto;
   font-size: 20px;
   line-height: 1.5;
-  padding: 100px 200px;
+  padding: 90px 180px;
   text-align: center; }
 
 .designers {
@@ -171,21 +171,22 @@ footer {
   .designers h1 {
     font-size: 36px;
     letter-spacing: 2px;
-    padding-top: 50px;
+    padding-bottom: 20px;
     text-align: center; }
-  .designers .designer-wrapper {
+  .designers.designer-wrapper {
     display: inline-block;
     position: relative; }
     @media (max-width: 1000px) {
-      .designers .designer-wrapper {
+      .designers.designer-wrapper {
         width: 49%; } }
     @media (max-width: 700px) {
-      .designers .designer-wrapper {
+      .designers.designer-wrapper {
         width: 100%; } }
   .designers img.designer-photo {
     box-sizing: border-box;
     border: 2px solid #FAFAFA;
     margin-top: 20px;
+    object-fit: cover;
     width: 100%; }
     .designers img.designer-photo:hover {
       opacity: 0.5; }
@@ -225,10 +226,7 @@ footer {
     margin: 0;
     object-fit: cover;
     width: 49.8%; }
-  .designer-header .first {
-    background-image: url("https://movieshoovy.files.wordpress.com/2014/04/designer-maria-b-working-on-a-sketch-for-her-psfw-2014-collection-f.jpg"); }
   .designer-header .second {
-    background-image: url("https://normalityandme.files.wordpress.com/2012/02/anna2.jpg");
     float: right; }
 
 .designer-title {
@@ -305,6 +303,24 @@ h4 {
   .designer-story {
     padding: 20px;
     margin: 20px; } }
+.emily {
+  background-image: url("../images/emily.jpg"); }
+
+.emily2 {
+  background-image: url("../images/zaha.jpg"); }
+
+.alex {
+  background-image: url("../images/alex.jpg"); }
+
+.alex2 {
+  background-image: url("../images/face.jpg"); }
+
+.hemyca {
+  background-image: url("../images/hemyca.jpg"); }
+
+.hemyca2 {
+  background-image: url("../images/hem.jpg"); }
+
 .product-header {
   box-sizing: border-box;
   height: 100vh;
@@ -316,15 +332,13 @@ h4 {
     margin: 0;
     object-fit: cover;
     width: 49.8%; }
-  .product-header .product-first {
-    background-image: url("https://img1.etsystatic.com/033/2/5627259/il_fullxfull.546516129_685u.jpg"); }
-    .product-header .product-first img {
-      display: none;
-      height: 500px;
-      margin: 0 auto;
-      padding-top: 60px;
-      text-align: center;
-      width: 500px; }
+  .product-header .product-first img {
+    display: none;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+    width: 500px; }
   .product-header .product-second {
     background-color: #FAFAFA;
     float: right; }
@@ -427,6 +441,33 @@ h4 {
     float: none;
     margin: 0;
     padding: 0; } }
+.emily-pic-1 {
+  background-image: url("../images/emily3.jpg"); }
+
+.emily-pic-2 {
+  background-image: url("../images/emily1.jpg"); }
+
+.emily-pic-3 {
+  background-image: url("../images/emily2.jpg"); }
+
+.lukas-pic-1 {
+  background-image: url("../images/alex1.jpg"); }
+
+.lukas-pic-2 {
+  background-image: url("../images/alex3.jpg"); }
+
+.lukas-pic-3 {
+  background-image: url("../images/alex5.jpg"); }
+
+.hem-pic-1 {
+  background-image: url("../images/hem1.jpg"); }
+
+.hem-pic-2 {
+  background-image: url("../images/hem3.jpg"); }
+
+.hem-pic-3 {
+  background-image: url("../images/hem2.jpg"); }
+
 .row {
   position: relative; }
 
