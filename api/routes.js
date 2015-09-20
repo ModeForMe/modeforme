@@ -10,14 +10,26 @@ module.exports = [
 
   {
     method: 'GET',
-    path: '/designer',
-    handler: handlers.designer
+    path: '/product',
+    handler: handlers.product
   },
 
   {
     method: 'GET',
-    path: '/product',
-    handler: handlers.product
+    path: '/designers/emily',
+    handler: handlers.emily
+  },
+
+  {
+    method: 'GET',
+    path: '/designers/lukas',
+    handler: handlers.lukas
+  },
+
+  {
+    method: 'GET',
+    path: '/designers/hemyca',
+    handler: handlers.hemyca
   },
 
   {
