@@ -22,28 +22,35 @@ nav {
     &:hover {
         cursor: pointer;
     }
+
 }
 
-.mobile-nav {
-    background-color: white;
-    display: none;
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    z-index: -10;
+.twitter, .facebook {
+    float: right;
+    height: 35px;
+    padding: 20px;
+}
 
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    p {
-        border-top: 1px solid #F3F3F3;
-        padding: 5px 0;
+    .mobile-nav {
+        background-color: white;
+        display: none;
+        font-size: 18px;
         text-align: center;
-    }
+        width: 100%;
+        z-index: -10;
 
-    p:hover {
-        cursor: pointer;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        p {
+            border-top: 1px solid #F3F3F3;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        p:hover {
+            cursor: pointer;
+        }
     }
-}
