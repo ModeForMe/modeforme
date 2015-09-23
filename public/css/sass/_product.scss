@@ -13,7 +13,6 @@
     }
 
     .product-first {
-        background-image: url('https://img1.etsystatic.com/033/2/5627259/il_fullxfull.546516129_685u.jpg');
 
         img {
             display: none;
@@ -86,21 +85,34 @@
         }
     }
 
-    button {
-        background-color: white;
-		border: 2px solid black;
-		color: black;
-		cursor: pointer;
-        display: block;
-		font-size: 20px;
-		letter-spacing: 3px;
-		margin: 20px auto 0 auto;
-		padding: 15px 15px;
-		width: 300px;
-		&:hover {
-			background-color: black;
-			color: white;
-		}
+    .product-second  {
+
+        .button {
+            background-color: white;
+    		border: 2px solid black;
+    		color: black;
+    		cursor: pointer;
+            display: block;
+    		font-size: 20px;
+    		letter-spacing: 3px;
+    		margin: 20px auto 0 auto;
+    		padding: 15px 15px;
+    		width: 350px;
+    		&:hover {
+    			background-color: black;
+    			color: white;
+    		}
+        }
+        .required-email {
+            display: block;
+            font-family: 'Source Sans Pro';
+            font-size: 20px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            width: 300px;
+        }
     }
 }
 
@@ -111,6 +123,7 @@
 
         img {
             display: inline-block;
+            padding-left: 8%;
         }
     }
 
@@ -145,6 +158,7 @@
         img {
             display: block;
             height: 300px;
+            padding-left: 0;
             padding-top: 40px;
             width: 300px;
         }
@@ -153,6 +167,11 @@
     .product-header .product-second {
         float: right;
         height: auto;
+
+        .button {
+            font-size: 14px;
+            width: 250px;
+        }
 
         img {
             width: 200px;
@@ -168,4 +187,40 @@
         margin: 0;
         padding: 0;
     }
+}
+
+.emily-pic-1 {
+    background-image: url('../images/emily3.jpg');
+}
+
+.emily-pic-2 {
+    background-image: url('../images/emily1.jpg');
+}
+
+.emily-pic-3 {
+    background-image: url('../images/emily2.jpg');
+}
+
+.lukas-pic-1 {
+    background-image: url('../images/alex1.jpg');
+}
+
+.lukas-pic-2 {
+    background-image: url('../images/alex3.jpg');
+}
+
+.lukas-pic-3 {
+    background-image: url('../images/alex5.jpg');
+}
+
+.hem-pic-1 {
+    background-image: url('../images/hem1.jpg');
+}
+
+.hem-pic-2 {
+    background-image: url('../images/hem3.jpg');
+}
+
+.hem-pic-3 {
+    background-image: url('../images/hem2.jpg');
 }
