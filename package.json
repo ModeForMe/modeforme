@@ -2,8 +2,9 @@
   "name": "offlimits",
   "version": "1.0.0",
   "description": "eco fashion",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "nodemon": "nodemon -e html,css,js"
   },
   "repository": {
