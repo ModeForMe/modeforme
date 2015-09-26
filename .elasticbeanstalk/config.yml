@@ -1,0 +1,10 @@
+branch-defaults:
+  redis:
+    environment: null
+global:
+  application_name: modeforme
+  default_ec2_keyname: aws-eb
+  default_platform: Node.js
+  default_region: eu-west-1
+  profile: eb-cli
+  sc: git
