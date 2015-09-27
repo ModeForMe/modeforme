@@ -5,7 +5,7 @@ server.connection({
     port: process.env.PORT || 8080
 });
 
-server.route(require('./api/routes.js'));
+server.route(require('./lib/routes.js'));
 
 server.start(function() {
     console.log('Server running at: ' + server.info.uri + '!');

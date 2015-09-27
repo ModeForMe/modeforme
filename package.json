@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "nodemon": "nodemon -e html,css,js"
+    "nodemon": "nodemon -e html,css,js",
+    "test": "./node_modules/.bin/tape ./test/*"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "hapi": "8.8.0"
   },
   "devDependencies": {
-    "nodemon": "^1.5.1"
+    "nodemon": "^1.5.1",
+    "tape": "^4.2.0"
   }
 }
