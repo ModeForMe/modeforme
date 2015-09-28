@@ -7,11 +7,22 @@ module.exports = [
     path: '/',
     handler: handlers.home
   },
-
   {
     method: 'GET',
     path: '/product',
     handler: handlers.product
+  },
+
+  {
+    method: 'GET',
+    path: '/apply',
+    handler: handlers.application
+  },
+
+  {
+    method: 'GET',
+    path: '/contact',
+    handler: handlers.contact
   },
 
   {

@@ -8,6 +8,14 @@ module.exports = {
         reply.file('./public/views/product.html');
     },
 
+    application: function(request, reply) {
+        reply.file('./public/views/apply.html');
+    },
+
+    contact: function(request, reply) {
+        reply.file('./public/views/contact.html');
+    },
+
     emily: function(request, reply) {
         reply.file('./public/views/emily.html');
     },
