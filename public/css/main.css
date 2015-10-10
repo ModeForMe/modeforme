@@ -109,9 +109,17 @@ footer {
 
 .splash {
   background-attachment: fixed;
-  background-image: url("../images/home-image.jpg");
+  background-image: url("../images/splash.png");
   background-size: cover;
   height: 100vh; }
+  .splash h1 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    padding: 15% 80px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .splash-text {
   background-color: white;
@@ -165,38 +173,33 @@ footer {
   padding: 90px 180px;
   text-align: center; }
 
-.designers {
+.featured-content {
   background-color: #FAFAFA;
   margin-bottom: 20px;
   width: 100%; }
-  .designers h1 {
+  .featured-content h1 {
     font-size: 36px;
     letter-spacing: 2px;
     padding-bottom: 20px;
     text-align: center; }
-  .designers.designer-wrapper {
+  .featured-content.designer-wrapper {
     display: inline-block;
     position: relative; }
     @media (max-width: 1000px) {
-      .designers.designer-wrapper {
+      .featured-content.designer-wrapper {
         width: 49%; } }
     @media (max-width: 700px) {
-      .designers.designer-wrapper {
+      .featured-content.designer-wrapper {
         width: 100%; } }
-  .designers img.designer-photo {
-    box-sizing: border-box;
+  .featured-content img.designer-photo {
     border: 2px solid #FAFAFA;
-    margin-top: 20px;
-    object-fit: cover;
-    width: 100%; }
-    .designers img.designer-photo:hover {
+    margin-top: 20px; }
+    .featured-content img.designer-photo:hover {
       opacity: 0.5; }
-  .designers a {
-    color: black;
-    text-decoration: none; }
-  .designers h3 {
-    letter-spacing: 2px;
-    padding: 15px; }
+  .featured-content .two-thirds {
+    width: 60%; }
+  .featured-content .one-third {
+    width: 30%; }
 
 @media (max-width: 800px) {
   .splash-text {
