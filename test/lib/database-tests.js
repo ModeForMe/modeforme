@@ -24,7 +24,7 @@ function testDatabase () {
         var requestedProductInfo;
 
         server.inject({method: "GET", url: "/api/getProductInfo/1"}, function (response) {
-            
+
             requestedProductInfo = response.payload;
             t.equal(requestedProductInfo, expectedProductInfo, "handlers.getProductInfo works");
             connection.end();

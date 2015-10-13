@@ -25,14 +25,14 @@ function testServer () {
         })
     });
 
-    test("contact page loads", function (t) {
-        server.inject({method: "GET", url: "/designers/hemyca"}, function (response) {
+    test("designer page loads", function (t) {
+        server.inject({method: "GET", url: "/designers/1-emily-sato"}, function (response) {
             t.equal(response.statusCode, 200, "handlers.showDesignerPage works");
             t.end();
         })
     });
 
-    test("contact page loads", function (t) {
+    test("product page loads", function (t) {
         server.inject({method: "GET", url: "/products/hem1"}, function (response) {
             t.equal(response.statusCode, 200, "handlers.showProductPage works");
             t.end();
