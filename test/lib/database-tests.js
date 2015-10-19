@@ -5,8 +5,21 @@ var expectedInfo = require("../fixtures/test-data.js");
 
 function testDatabase () {
 
-    test("database gets info for one designer", function (t) {
+    test("database is working", function (t) {
+        var dataExists;
 
+        connection.query("select * from designers", function (err, data) {
+
+            if (data.length > 1) {
+                dataExists = true;
+            }
+            t.equal(dataExists, true, "database is working");
+            t.end();
+        });
+
+    });
+
+    test("database gets info for one designer", function (t) {
         var expectedDesignerInfo = expectedInfo.designer;
         var requestedDesignerInfo;
 
@@ -19,7 +32,6 @@ function testDatabase () {
     });
 
     test("database gets info for one product", function (t) {
-
         var expectedProductInfo = expectedInfo.product;
         var requestedProductInfo;
 
