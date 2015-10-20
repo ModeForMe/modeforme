@@ -109,7 +109,6 @@ footer {
 
 .splash {
   background-attachment: fixed;
-  background-image: url("../images/splash.png");
   background-size: cover;
   height: 100vh; }
   .splash h1 {
