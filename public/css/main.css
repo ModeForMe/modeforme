@@ -367,6 +367,18 @@ h4 {
     width: 85%; }
   .contact-form input[type="submit"] {
     margin-left: 100px; } }
+.how-it-works {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 200px; }
+  .how-it-works .how-it-works-component {
+    border: 1px solid grey;
+    padding: 50px; }
+  .how-it-works img {
+    height: 200px; }
+
 .product-header {
   box-sizing: border-box;
   height: 100vh;
