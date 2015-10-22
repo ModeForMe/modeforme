@@ -117,7 +117,7 @@ footer {
     font-size: 60px;
     letter-spacing: 5px;
     line-height: 1.5;
-    padding: 10% 0;
+    padding: 15% 0 5% 0;
     text-align: center;
     text-transform: uppercase; }
   .splash .required-email {
@@ -125,7 +125,7 @@ footer {
     font-family: 'Source Sans Pro';
     font-size: 20px;
     height: 50px;
-    text-align: center;
+    padding-left: 10px;
     width: 300px; }
   .splash .response {
     font-size: 14px; }
@@ -166,7 +166,7 @@ footer {
   .featured-content h1 {
     font-size: 36px;
     letter-spacing: 2px;
-    padding-bottom: 20px;
+    padding: 50px 0 20px 0;
     text-align: center; }
   .featured-content.designer-wrapper {
     display: inline-block;
@@ -178,29 +178,41 @@ footer {
       .featured-content.designer-wrapper {
         width: 100%; } }
   .featured-content img.designer-photo {
+    box-sizing: border-box;
     border: 2px solid #FAFAFA;
-    margin-top: 20px; }
+    margin-top: 20px;
+    object-fit: cover;
+    width: 100%; }
     .featured-content img.designer-photo:hover {
       opacity: 0.5; }
+  .featured-content h3 {
+    color: black;
+    letter-spacing: 2px;
+    padding: 15px;
+    text-decoration: none; }
   .featured-content .two-thirds {
     width: 60%; }
   .featured-content .one-third {
     width: 30%; }
 
 @media (max-width: 800px) {
-  .splash-text {
-    font-size: 24px;
-    height: 350px;
-    padding: 40px;
-    width: 400px; }
-    .splash-text .required-email {
+  .splash h1 {
+    font-size: 50px;
+    height: 350px; }
+    .splash h1 .required-email {
       width: 300px; }
 
   .introduction {
     padding: 50px; } }
+@media (max-width: 600px) {
+  .splash h1 {
+    font-size: 40px;
+    height: 350px; } }
 @media (max-width: 450px) {
-  .splash-text {
-    width: 95%; }
+  .splash h1 {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px; }
 
   .splash-text .required-email {
     width: 260px !important; } }
