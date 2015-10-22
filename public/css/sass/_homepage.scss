@@ -3,37 +3,24 @@
 	// background-image: url('../images/splash.png');
 	background-size: cover;
 	height: 100vh;
+	text-align: center;
 
 	h1 {
 		color: white;
 		font-size: 60px;
 		letter-spacing: 5px;
 		line-height: 1.5;
-		padding: 15% 80px;
+		padding: 10% 0;
 		text-align: center;
 		text-transform: uppercase;
 	}
-}
 
-.splash-text {
-	background-color: white;
-	box-sizing: border-box;
-	font-size: 24px;
-	height: 390px;
-	margin: 15% auto 0 auto;
-	padding-left: 80px;
-    padding-right: 80px;
-	padding-top: 85px;
-	text-align: center;
-	width: 700px;
-	& h3 {
-		font-size: large;
-	}
+	// Mailing list signup
 	.required-email {
+		display: inline;
 		font-family: 'Source Sans Pro';
 		font-size: 20px;
 		height: 50px;
-		margin-top: 30px;
 		text-align: center;
 		width: 300px;
 	}
@@ -50,7 +37,7 @@
 		border: 2px solid black;
 		color: black;
 		cursor: pointer;
-		display: inline-block;
+		display: inline;
 		font-size: 20px;
 		letter-spacing: 3px;
 		margin-top: 10px;
