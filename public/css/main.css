@@ -110,58 +110,45 @@ footer {
 .splash {
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
   .splash h1 {
     color: white;
     font-size: 60px;
     letter-spacing: 5px;
     line-height: 1.5;
-    padding: 15% 80px;
+    padding: 10% 0;
     text-align: center;
     text-transform: uppercase; }
-
-.splash-text {
-  background-color: white;
-  box-sizing: border-box;
-  font-size: 24px;
-  height: 390px;
-  margin: 15% auto 0 auto;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 85px;
-  text-align: center;
-  width: 700px; }
-  .splash-text h3 {
-    font-size: large; }
-  .splash-text .required-email {
+  .splash .required-email {
+    display: inline;
     font-family: 'Source Sans Pro';
     font-size: 20px;
     height: 50px;
-    margin-top: 30px;
     text-align: center;
     width: 300px; }
-  .splash-text .response {
+  .splash .response {
     font-size: 14px; }
-  .splash-text .disclaimer {
+  .splash .disclaimer {
     color: gray;
     font-size: 12px;
     margin: 5px auto; }
-  .splash-text .button {
+  .splash .button {
     background-color: white;
     border: 2px solid black;
     color: black;
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     font-size: 20px;
     letter-spacing: 3px;
     margin-top: 10px;
     padding: 15px 15px;
     text-align: center;
     width: 250px; }
-    .splash-text .button:hover {
+    .splash .button:hover {
       background-color: black;
       color: white; }
-  .splash-text .clear {
+  .splash .clear {
     display: inline-block; }
 
 .introduction {
