@@ -54,6 +54,31 @@
 	}
 }
 
+.homepage-content {
+	margin: 20px;
+
+	.homepage-content-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+
+	.one-third {
+
+		img {
+			flex-shrink: 1;
+		}
+
+	}
+
+	.two-thirds {
+		img {
+			flex-shrink: 2;
+		}
+	}
+}
+
 
 .introduction {
 	box-sizing: border-box;

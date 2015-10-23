@@ -1,16 +1,43 @@
+.how-it-works-title {
+    font-size: 36px;
+    letter-spacing: 2px;
+    padding: 50px 0 40px 0;
+    text-align: center;
+}
+
 .how-it-works {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 50px 200px;
+    justify-content: center;
 
     .how-it-works-component {
-        border: 1px solid grey;
-        padding: 50px;
+        background-color: white;
+        border: 1px solid lightgrey;
+        @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+        height: 250px;
+        margin: 0 20px 20px 20px;
+        padding: 30px;
+        text-align: center;
+        width: 250px;
     }
 
     img {
-        height: 200px;
+        height: 125px;
+        padding-bottom: 20px;
+        width: 125px;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 1.2;
     }
 }
