@@ -27,7 +27,7 @@ $(document).ready(function() {
 // progress bar demo
 
 function changeProgressBar () {
-    console.log("Hey changing");
+
     $(".goal-box .sold").replaceWith('<p style="color: grey"><span>SOLD:</span> 41 items&nbsp;&nbsp;&nbsp;</p>');
     $("#mc-embedded-subscribe").replaceWith('<p class="bought">PRE-ORDERED FOR £380</p><p class="confirmation">This item has been added to your cart.<br>We\'ll notify you when this design goes into production.</p>');
     $(".goal-box img").attr('src', "../static/public/images/progress2.png");
@@ -37,6 +37,6 @@ function changeProgressBar () {
 $("#mc-embedded-subscribe").on('click', function() {
     var input = this;
     input.disabled = true;
-    changeProgressBar();
 
+    changeProgressBar();
 });
