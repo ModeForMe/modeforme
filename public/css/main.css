@@ -108,7 +108,6 @@ footer {
       letter-spacing: 2px; }
 
 .splash {
-  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   text-align: center; }
