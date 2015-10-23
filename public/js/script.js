@@ -27,10 +27,8 @@ $(document).ready(function() {
 // progress bar demo
 
 function changeProgressBar () {
-    console.log("Hey changing")
-    $(".goal-box").replace(
-        "<img src='../static/public/images/emily1.png'>"
-    );
+    // console.log("Hey changing")
+    $(".goal-box").replace();
 };
 
 $(".join-waiting-list").click(changeProgressBar());
