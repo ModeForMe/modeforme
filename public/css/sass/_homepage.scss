@@ -1,6 +1,6 @@
 .splash {
-	// background-attachment: fixed;
-	// background-image: url('../images/splash.png');
+	background-attachment: fixed;
+	background-image: url('../images/splash.png');
 	background-size: cover;
 	height: 100vh;
 	text-align: center;
@@ -10,7 +10,7 @@
 		font-size: 60px;
 		letter-spacing: 5px;
 		line-height: 1.5;
-		padding: 15% 0 5% 0;
+		padding: 10% 0 5% 0;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -104,6 +104,10 @@
 		color: black;
 		letter-spacing: 2px;
     	padding: 15px;
+		// text-decoration: none;
+	}
+
+	a {
 		text-decoration: none;
 	}
 

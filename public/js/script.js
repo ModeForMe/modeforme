@@ -27,8 +27,9 @@ $(document).ready(function() {
 // progress bar demo
 
 function changeProgressBar () {
-    $(".progress-bar-one").replace(
-        "<img src='../static/public/images/progress-bar-two'>"
+    console.log("Hey changing")
+    $(".goal-box").replace(
+        "<img src='../static/public/images/emily1.png'>"
     );
 };
 
