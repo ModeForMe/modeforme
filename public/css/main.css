@@ -99,17 +99,17 @@ footer {
     text-align: center; }
     footer .social-media li {
       display: inline-block; }
+    footer .social-media h3 {
+      display: none; }
   footer .twitter, footer .facebook {
     height: 35px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     padding-top: 100px; }
     footer .twitter h3, footer .facebook h3 {
       display: none; }
 
 .splash {
-  background-attachment: fixed;
-  background-image: url("../images/splash.png");
   background-size: cover;
   height: 100vh;
   text-align: center; }

@@ -1,17 +1,23 @@
 footer {
     background-color: white;
     height: 200px;
+
 	.social-media {
 	    margin: 0 auto;
 	    text-align: center;
+
 	    li {
 	    	display: inline-block;
 	    }
+
+        h3 {
+            display: none;
+        }
 	}
 	.twitter, .facebook {
 	    height: 35px;
 	    margin: 0 auto;
-	    padding: 20px;
+	    padding: 10px;
 	    padding-top: 100px;
 	    h3 {
             display: none;

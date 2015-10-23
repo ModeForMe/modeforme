@@ -29,14 +29,20 @@ $(document).ready(function() {
 function changeProgressBar () {
 
     $(".goal-box .sold").replaceWith('<p style="color: grey"><span>SOLD:</span> 41 items&nbsp;&nbsp;&nbsp;</p>');
-    $("#mc-embedded-subscribe").replaceWith('<p class="bought">PRE-ORDERED FOR £380</p><p class="confirmation">This item has been added to your cart.<br>We\'ll notify you when this design goes into production.</p>');
+    $(".progress-bar-button").replaceWith('<p class="bought">PRE-ORDERED FOR £380</p><p class="confirmation">This item has been added to your cart.<br>We\'ll notify you when this design goes into production.</p>');
     $(".goal-box img").attr('src', "../static/public/images/progress2.png");
     return false;
 };
 
-$("#mc-embedded-subscribe").on('click', function() {
+$(".progress-bar-button").on('click', function() {
     var input = this;
     input.disabled = true;
 
     changeProgressBar();
+});
+
+// submit button success message
+
+$("#homepage-subscribe").on('click', function() {
+    console.log("clicked");
 });

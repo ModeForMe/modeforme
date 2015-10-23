@@ -19,7 +19,7 @@
         <title>Mode For Me</title>
     </head>
     <body>
-        <div class="splash">
+        <div class="splash" data-parallax="scroll" data-image-src="../static/public/images/splash.png" naturalHeight="100">
             <nav>
                 <a href="./">
                     <img class="logo" src="../static/public/images/logo.png">
@@ -49,7 +49,7 @@
                             <div class="mc-field-group">
                                 <label for="mce-EMAIL"></label>
                                 <input type="email" placeholder="Your email address" value="" name="EMAIL" class="required-email" id="mce-EMAIL">
-                                <input type="submit" value="KEEP ME POSTED" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                <input type="submit" value="KEEP ME POSTED" name="subscribe" id="mc-embedded-subscribe homepage-subscribe" class="button">
                             </div>
                             <div style="position: absolute; left: -5000px;"><input type="text" name="b_f4872b9c06d1656977bf8b938_cc1fe4ea9c" tabindex="-1" value="">
                             </div>
@@ -57,7 +57,6 @@
                         </div>
                     </form>
                 </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery;</script>
                 <!--End mc_embed_signup-->
         </div>
         <h1 class="how-it-works-title">HOW IT WORKS</h1>
@@ -128,5 +127,18 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="../static/public/js/parallax.min.js"></script>
         <script type="text/javascript" src="../static/public/js/script.js"></script>
+        <script type='text/javascript'>
+            (function($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0]='EMAIL';
+                ftypes[0]='email';
+                fnames[1]='FNAME';
+                ftypes[1]='text';
+                fnames[2]='LNAME';
+                ftypes[2]='text';
+            }(jQuery));
+            var $mcj = jQuery;
+        </script>
     </body>
 </html>
