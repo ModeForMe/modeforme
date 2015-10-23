@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "nodemon": "nodemon -e html,css,js",
-    "sass": "--watch ./public/css/sass/main.scss:./public/css/main.css"
+    "sass": "sass --watch ./public/css/sass/main.scss:./public/css/main.css"
   },
   "repository": {
     "type": "git",

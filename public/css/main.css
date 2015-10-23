@@ -189,8 +189,7 @@ footer {
   .featured-content h3 {
     color: black;
     letter-spacing: 2px;
-    padding: 15px;
-    text-decoration: none; }
+    padding: 15px; }
   .featured-content a {
     text-decoration: none; }
   .featured-content .two-thirds {
@@ -461,6 +460,14 @@ h4 {
     margin-top: 30px;
     text-align: center;
     width: 300px; }
+  .product-header .product-second .bought {
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center; }
+  .product-header .product-second .confirmation {
+    text-align: center; }
 
 @media (max-width: 1300px) {
   .product-header .product-first {
