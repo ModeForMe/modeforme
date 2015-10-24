@@ -6,22 +6,22 @@
   "scripts": {
     "start": "node server.js",
     "nodemon": "nodemon -e html,css,js",
-    "sass": "--watch ./public/css/sass/main.scss:./public/css/main.css"
+    "sass": "sass --watch ./public/css/sass/main.scss:./public/css/main.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/msmichellegar/offlimits.git"
   },
   "keywords": [
-    "eco",
+    "designers",
     "fashion"
   ],
   "author": "msmichellegar nofootnotes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/msmichellegar/offlimits/issues"
+    "url": "https://github.com/modeforme/modeforme/issues"
   },
-  "homepage": "https://github.com/msmichellegar/offlimits#readme",
+  "homepage": "https://github.com/modeforme/modeforme#readme",
   "dependencies": {
     "hapi": "8.8.0"
   },
