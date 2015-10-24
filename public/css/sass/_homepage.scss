@@ -1,6 +1,6 @@
 .splash {
-	// background-attachment: fixed;
-	// background-image: url('../images/splash.png');
+	background-attachment: fixed;
+	background-image: url('../images/home-image.jpg');
 	background-size: cover;
 	height: 100vh;
 	text-align: center;
@@ -150,7 +150,7 @@
 
 	.splash h1 {
 		font-size: 50px;
-		height: 350px;
+
 		.required-email {
 			width: 300px;
 		}
@@ -165,7 +165,8 @@
 
 	.splash h1 {
 		font-size: 40px;
-		height: 350px;
+		// height: 350px;
+		padding-bottom: 10%;
 	}
 
 }
@@ -180,4 +181,8 @@
 	.splash-text .required-email {
 		width: 260px !important;
 	}
+}
+
+.mce_inline_error:nth-child(odd) {
+    display: none !important;
 }

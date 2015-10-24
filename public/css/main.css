@@ -110,6 +110,8 @@ footer {
       display: none; }
 
 .splash {
+  background-attachment: fixed;
+  background-image: url("../images/home-image.jpg");
   background-size: cover;
   height: 100vh;
   text-align: center; }
@@ -210,8 +212,7 @@ footer {
 
 @media (max-width: 800px) {
   .splash h1 {
-    font-size: 50px;
-    height: 350px; }
+    font-size: 50px; }
     .splash h1 .required-email {
       width: 300px; }
 
@@ -220,7 +221,7 @@ footer {
 @media (max-width: 600px) {
   .splash h1 {
     font-size: 40px;
-    height: 350px; } }
+    padding-bottom: 10%; } }
 @media (max-width: 450px) {
   .splash h1 {
     font-size: 30px;
@@ -229,6 +230,9 @@ footer {
 
   .splash-text .required-email {
     width: 260px !important; } }
+.mce_inline_error:nth-child(odd) {
+  display: none !important; }
+
 .designer-header {
   box-sizing: border-box;
   height: 100vh;
