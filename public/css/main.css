@@ -226,7 +226,7 @@ footer {
     display: inline-block; }
 
 @media (max-width: 800px) {
-  .splash h1, .spash-two h1 {
+  .splash h1, .splash-two h1 {
     font-size: 50px; }
 
   .required-email {
