@@ -120,39 +120,9 @@ footer {
     font-size: 60px;
     letter-spacing: 5px;
     line-height: 1.5;
-    padding: 10% 0 5% 0;
+    padding: 15% 0 5% 0;
     text-align: center;
     text-transform: uppercase; }
-  .splash .required-email {
-    display: inline;
-    font-family: 'Source Sans Pro';
-    font-size: 20px;
-    height: 50px;
-    padding-left: 10px;
-    width: 300px; }
-  .splash .response {
-    font-size: 14px; }
-  .splash .disclaimer {
-    color: gray;
-    font-size: 12px;
-    margin: 5px auto; }
-  .splash .button {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    cursor: pointer;
-    display: inline;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin-top: 10px;
-    padding: 15px 15px;
-    text-align: center;
-    width: 250px; }
-    .splash .button:hover {
-      background-color: black;
-      color: white; }
-  .splash .clear {
-    display: inline-block; }
 
 .homepage-content {
   margin: 20px; }
@@ -210,20 +180,66 @@ footer {
   .featured-content .one-third {
     width: 30%; }
 
+.splash-two {
+  background-attachment: fixed;
+  background-image: url("../images/studio.jpg");
+  background-size: cover;
+  height: 500px;
+  text-align: center; }
+  .splash-two h1 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    padding: 10% 0 5% 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .splash-two .required-email {
+    display: inline;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    height: 50px;
+    padding-left: 10px;
+    width: 300px; }
+  .splash-two .response {
+    font-size: 14px; }
+  .splash-two .disclaimer {
+    color: gray;
+    font-size: 12px;
+    margin: 5px auto; }
+  .splash-two .button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    display: inline;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    padding: 15px 15px;
+    text-align: center;
+    width: 250px; }
+    .splash-two .button:hover {
+      background-color: black;
+      color: white; }
+  .splash-two .clear {
+    display: inline-block; }
+
 @media (max-width: 800px) {
-  .splash h1 {
+  .splash h1, .spash-two h1 {
     font-size: 50px; }
-    .splash h1 .required-email {
-      width: 300px; }
+
+  .required-email {
+    width: 300px; }
 
   .introduction {
     padding: 50px; } }
 @media (max-width: 600px) {
-  .splash h1 {
+  .splash h1, .splash-two h1 {
     font-size: 40px;
     padding-bottom: 10%; } }
 @media (max-width: 450px) {
-  .splash h1 {
+  .splash h1, .splash-two h1 {
     font-size: 30px;
     padding-left: 10px;
     padding-right: 10px; }
@@ -393,7 +409,8 @@ h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 50px; }
   .how-it-works .how-it-works-component {
     background-color: white;
     border: 1px solid lightgrey;
