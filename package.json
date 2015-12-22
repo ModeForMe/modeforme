@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/modeforme/modeforme#readme",
   "dependencies": {
-    "hapi": "8.8.0"
+    "hapi": "^9.0.0",
+    "inert": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.5.1"
