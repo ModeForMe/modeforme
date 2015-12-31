@@ -110,6 +110,12 @@ module.exports = [
   },
 
   {
+    method: ['GET', 'POST'],
+    path: '/checkout',
+    handler: handlers.checkout
+  },
+
+  {
     method: 'GET',
     path: '/static/{path*}',
     handler:  {

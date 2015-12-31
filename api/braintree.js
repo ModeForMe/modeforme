@@ -11,13 +11,27 @@ var gateway = braintree.connect({
 module.exports = {
 
     getClientToken: function getClientToken (callback) {
-      gateway.clientToken.generate({}, function (err, response) {
-          if (err) {
+        gateway.clientToken.generate({}, function (err, response) {
+            if (err) {
               callback(err, null);
-          } else {
-              callback(null, response.clientToken);  
-          }
-      });
+            } else {
+              callback(null, response.clientToken);
+            }
+        });
+    },
+
+    checkout: function checkout (callback) {
+        var amount = '10.00';
+        gateway.transaction.sale({
+            amount: amount,
+            paymentMethodNonce: 'fake-valid-nonce',
+        }, function (err, result) {
+            if (err) {
+                callback(err, null);
+            } else {
+                callback(null, response);
+            }
+        });
     }
 
 };
