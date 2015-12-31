@@ -1,3 +1,5 @@
+var braintree = require("./braintree.js");
+
 module.exports = {
 
     home: function(request, reply) {
@@ -67,5 +69,12 @@ module.exports = {
     hemyca3: function(request, reply) {
         reply.file('./public/views/hemyca3.html');
     },
+
+    braintreeToken: function (request, reply) {
+        console.log("braintree");
+        braintree.getClientToken(function(err, token) {
+            console.log("in handlers", token);
+        });
+    }
 
 };
