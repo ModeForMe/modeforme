@@ -70,8 +70,8 @@ module.exports = {
         reply.file('./public/views/hemyca3.html');
     },
 
-    checkout: function(request, reply) {
-        reply.file('./public/views/checkout.html');
+    cart: function(request, reply) {
+        reply.file('./public/views/cart.html');
     },
 
     braintreeToken: function(request, reply) {

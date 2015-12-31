@@ -45,7 +45,7 @@ button {
   -webkit-appearance: none; }
 
 html {
-  background-color: #FAFAFA;
+  background-color: white;
   font-family: Source Sans Pro; }
 
 .row {
@@ -633,7 +633,7 @@ h4 {
   background-image: url("../images/hem2.jpg"); }
 
 .checkout {
-  min-height: 50vh;
+  min-height: 70vh;
   margin: 50px 150px;
   text-align: center; }
   .checkout h2 {
@@ -641,24 +641,53 @@ h4 {
     letter-spacing: 2px;
     margin-bottom: 20px; }
   .checkout p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
     margin-bottom: 20px;
     text-align: left; }
   .checkout a {
     color: black;
     font-weight: bold; }
-  .checkout .cart-item h3 {
-    font-size: 30px;
-    margin: 50px 0 20px 0;
+  .checkout .shopping-cart {
     text-align: left; }
-  .checkout .cart-item img {
-    border: solid 1px black;
-    height: 150px;
-    float: left;
-    width: 150px; }
-  .checkout .cart-item p {
-    font-size: 24px;
-    font-weight: bold; }
+    .checkout .shopping-cart h3 {
+      font-size: 30px;
+      margin: 50px 0 30px 0; }
+    .checkout .shopping-cart h4 {
+      display: inline-block;
+      padding: 0 0 5px 0; }
+    .checkout .shopping-cart h4:first-of-type {
+      margin-right: 52%;
+      width: 300px; }
+    .checkout .shopping-cart img {
+      border: solid 1px black;
+      display: inline-block;
+      height: 150px;
+      width: 150px; }
+    .checkout .shopping-cart .item {
+      align-items: flex-start;
+      display: flex;
+      margin: 20px; }
+      .checkout .shopping-cart .item p {
+        padding: 20px;
+        text-transform: uppercase; }
+      .checkout .shopping-cart .item p:first-of-type {
+        margin-right: 25%;
+        width: 400px; }
+      .checkout .shopping-cart .item i {
+        font-size: 22px;
+        font-weight: bold; }
+    .checkout .shopping-cart .checkout-button {
+      float: right;
+      margin-right: 100px;
+      text-align: center; }
+      .checkout .shopping-cart .checkout-button button {
+        background-color: #FAFAFA;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 22px;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+        width: 300px; }
 
 /*# sourceMappingURL=main.css.map */

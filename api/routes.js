@@ -105,8 +105,8 @@ module.exports = [
 
   {
     method: 'GET',
-    path: '/checkout',
-    handler: handlers.checkout
+    path: '/cart',
+    handler: handlers.cart
   },
 
   {
