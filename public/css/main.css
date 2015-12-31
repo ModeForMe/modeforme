@@ -423,6 +423,13 @@ h4 {
     color: black;
     font-weight: bold; }
 
+@media (max-width: 875px) {
+  .about-content {
+    margin: 40px 50px; }
+    .about-content h2 {
+      font-size: 32px; }
+    .about-content p {
+      font-size: 18px; } }
 .contact-form-intro {
   margin: 50px 150px;
   text-align: center; }
