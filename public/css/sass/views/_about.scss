@@ -1,0 +1,23 @@
+.about-content {
+    min-height: 50vh;
+    margin: 50px 150px;
+    text-align: center;
+
+    h2 {
+        font-size: 50px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
