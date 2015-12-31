@@ -20,7 +20,7 @@ module.exports = {
         });
     },
 
-    checkout: function checkout (callback) {
+    makeSale: function makeSale (callback) {
         var amount = '10.00';
         gateway.transaction.sale({
             amount: amount,

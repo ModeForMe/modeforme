@@ -1,4 +1,4 @@
-.about-content {
+.checkout {
     min-height: 50vh;
     margin: 50px 150px;
     text-align: center;
@@ -20,19 +20,25 @@
         color: black;
         font-weight: bold;
     }
-}
 
-@media (max-width: 875px) {
-    .about-content {
-        margin: 40px 50px;
+    .cart-item {
 
-        h2 {
-            font-size: 32px;
+        h3 {
+            font-size: 30px;
+            margin: 50px 0 20px 0;
+            text-align: left;
+        }
+
+        img {
+            border: solid 1px black;
+            height: 150px;
+            float: left;
+            width: 150px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 24px;
+            font-weight: bold;
         }
-
     }
 }

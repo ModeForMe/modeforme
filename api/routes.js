@@ -105,14 +105,20 @@ module.exports = [
 
   {
     method: 'GET',
+    path: '/checkout',
+    handler: handlers.checkout
+  },
+
+  {
+    method: 'GET',
     path: '/braintree_token',
     handler: handlers.braintreeToken
   },
 
   {
     method: ['GET', 'POST'],
-    path: '/checkout',
-    handler: handlers.checkout
+    path: '/sale',
+    handler: handlers.makeSale
   },
 
   {

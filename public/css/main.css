@@ -423,6 +423,13 @@ h4 {
     color: black;
     font-weight: bold; }
 
+@media (max-width: 875px) {
+  .about-content {
+    margin: 40px 50px; }
+    .about-content h2 {
+      font-size: 32px; }
+    .about-content p {
+      font-size: 18px; } }
 .contact-form-intro {
   margin: 50px 150px;
   text-align: center; }
@@ -624,5 +631,34 @@ h4 {
 
 .hem-pic-3 {
   background-image: url("../images/hem2.jpg"); }
+
+.checkout {
+  min-height: 50vh;
+  margin: 50px 150px;
+  text-align: center; }
+  .checkout h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  .checkout p {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-align: left; }
+  .checkout a {
+    color: black;
+    font-weight: bold; }
+  .checkout .cart-item h3 {
+    font-size: 30px;
+    margin: 50px 0 20px 0;
+    text-align: left; }
+  .checkout .cart-item img {
+    border: solid 1px black;
+    height: 150px;
+    float: left;
+    width: 150px; }
+  .checkout .cart-item p {
+    font-size: 24px;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

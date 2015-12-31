@@ -70,15 +70,19 @@ module.exports = {
         reply.file('./public/views/hemyca3.html');
     },
 
+    checkout: function(request, reply) {
+        reply.file('./public/views/checkout.html');
+    },
+
     braintreeToken: function(request, reply) {
         braintree.getClientToken(function(err, token) {
             console.log("in handlers", token);
         });
     },
 
-    checkout: function(request, reply) {
+    makeSale: function(request, reply) {
         // var nonce = request.body.payment_method_nonce;
-        braintree.checkout(function(err, response) {
+        braintree.makeSale(function(err, response) {
             console.log(response);
         });
     }
