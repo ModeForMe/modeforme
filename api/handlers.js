@@ -78,6 +78,10 @@ module.exports = {
         reply.file('./public/views/checkout.html');
     },
 
+    success: function(request, reply) {
+        reply.file('./public/views/success.html');
+    },
+
     braintreeToken: function(request, reply) {
         braintree.getClientToken(function(err, token) {
             reply(token);
@@ -89,7 +93,9 @@ module.exports = {
         // var nonce = request.body.payment_method_nonce;
         var nonce = "fake nonce";
         braintree.makeSale(amount, nonce, function(err, data) {
-            console.log(data);
+            if (data.success === true) {
+                reply.redirect("/");
+            }
         });
     }
 

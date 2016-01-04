@@ -117,6 +117,12 @@ module.exports = [
 
   {
     method: 'GET',
+    path: '/success',
+    handler: handlers.success
+  },
+
+  {
+    method: 'GET',
     path: '/braintree_token',
     handler: handlers.braintreeToken
   },
