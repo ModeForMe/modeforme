@@ -40,9 +40,3 @@ $(".progress-bar-button").on('click', function() {
 
     changeProgressBar();
 });
-
-// submit button success message
-
-$("#homepage-subscribe").on('click', function() {
-    console.log("clicked");
-});

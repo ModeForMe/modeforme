@@ -13,15 +13,14 @@ module.exports = {
     getClientToken: function getClientToken (callback) {
         gateway.clientToken.generate({}, function (err, response) {
             if (err) {
-              callback(err, null);
+                callback(err, null);
             } else {
-              callback(null, response.clientToken);
+                callback(null, response.clientToken);
             }
         });
     },
 
-    makeSale: function makeSale (callback) {
-        var amount = '10.00';
+    makeSale: function makeSale (amount, nonce, callback) {
         gateway.transaction.sale({
             amount: amount,
             paymentMethodNonce: 'fake-valid-nonce',
@@ -29,7 +28,7 @@ module.exports = {
             if (err) {
                 callback(err, null);
             } else {
-                callback(null, response);
+                callback(null, result);
             }
         });
     }

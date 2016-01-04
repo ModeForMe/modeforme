@@ -640,6 +640,10 @@ h4 {
     font-size: 50px;
     letter-spacing: 2px;
     margin-bottom: 20px; }
+  .checkout h3 {
+    font-size: 30px;
+    margin: 50px 0 30px 0;
+    text-align: left; }
   .checkout p {
     font-size: 18px;
     line-height: 1.1;
@@ -648,11 +652,17 @@ h4 {
   .checkout a {
     color: black;
     font-weight: bold; }
+  .checkout button, .checkout input[type="submit"] {
+    background-color: #FAFAFA;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 300px; }
   .checkout .shopping-cart {
     text-align: left; }
-    .checkout .shopping-cart h3 {
-      font-size: 30px;
-      margin: 50px 0 30px 0; }
     .checkout .shopping-cart h4 {
       display: inline-block;
       padding: 0 0 5px 0; }
@@ -681,13 +691,16 @@ h4 {
       float: right;
       margin-right: 100px;
       text-align: center; }
-      .checkout .shopping-cart .checkout-button button {
-        background-color: #FAFAFA;
-        border: 1px solid black;
-        cursor: pointer;
-        font-size: 22px;
-        letter-spacing: 1px;
-        padding: 10px 15px;
-        width: 300px; }
+
+@media (max-width: 875px) {
+  .checkout {
+    margin: 40px 50px; }
+    .checkout h2 {
+      font-size: 32px; }
+    .checkout p {
+      font-size: 18px; }
+    .checkout .shopping-cart .checkout-button {
+      float: none;
+      margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
