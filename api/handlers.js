@@ -1,4 +1,5 @@
 var braintree = require("./braintree.js");
+var mandrill = require("./mandrill.js");
 
 module.exports = {
 
@@ -92,9 +93,13 @@ module.exports = {
         var amount = '10.00';
         // var nonce = request.body.payment_method_nonce;
         var nonce = "fake nonce";
+        var email = "msmichellecatherine@gmail.com";
+
         braintree.makeSale(amount, nonce, function(err, data) {
             if (data.success === true) {
-                reply.redirect("/");
+                mandrill.sendPurchaseConfirmation(email, function() {
+                    reply.redirect("/success");
+                });
             }
         });
     }
