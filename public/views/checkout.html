@@ -45,8 +45,21 @@
             </div>
         <header>
         <section class="checkout">
-            <h3>YOUR PAYMENT DETAILS</h3>
             <form id="checkout" method="post" action="/sale">
+                <h3>ACCOUNT INFORMATION</h3>
+                <h5>Full Name:</h5>
+                <input type="text" name="name"></input>
+                <h5>Address:</h5>
+                <input type="text" name="address"></input>
+                <h5>Postcode:</h5>
+                <input type="text" name="postcode"></input>
+                <h5>Country:</h5>
+                <p>United Kingdom</p>
+                <h5>Email:</h5>
+                <input type="text" name="email"></input>
+                <h5>Phone Number:</h5>
+                <input type="text" name="number"></input>
+                <h3>PAYMENT DETAILS</h3>
                 <div id="payment-form"></div>
                 <input type="submit" value="Pay £">
             </form>
