@@ -671,14 +671,7 @@ h4 {
   .checkout h5 {
     font-size: 22px;
     text-align: left; }
-  .checkout form input[type="text"] {
-    border: 1px solid lightgrey;
-    display: block;
-    font-size: 18px;
-    margin: 10px 0;
-    padding: 10px;
-    width: 550px; }
-  .checkout form button, .checkout form input[type="submit"] {
+  .checkout button, .checkout input[type="submit"] {
     background-color: #FAFAFA;
     border: 1px solid black;
     cursor: pointer;
@@ -687,6 +680,13 @@ h4 {
     margin-top: 20px;
     padding: 10px 15px;
     width: 300px; }
+  .checkout form input[type="text"] {
+    border: 1px solid lightgrey;
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 550px; }
   .checkout form p {
     border: 1px solid black;
     font-size: 18px;
