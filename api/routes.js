@@ -104,6 +104,12 @@ module.exports = [
   },
 
   {
+    method: ['GET', 'POST'],
+    path: '/clickPurchase{param?}',
+    handler: handlers.clickPurchase
+  },
+
+  {
     method: 'GET',
     path: '/cart',
     handler: handlers.cart

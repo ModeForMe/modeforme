@@ -1,5 +1,12 @@
 var braintree = require("./braintree.js");
 var mandrill = require("./mandrill.js");
+var fs = require("fs");
+
+// variables for cart
+var item;
+var designer;
+var image;
+var price;
 
 module.exports = {
 
@@ -71,12 +78,40 @@ module.exports = {
         reply.file('./public/views/hemyca3.html');
     },
 
+    clickPurchase: function(request, reply) {
+        item = request.payload.item;
+        designer = request.payload.designer;
+        image = request.payload.image;
+        price = request.payload.price;
+        reply.redirect("/cart");
+    },
+
     cart: function(request, reply) {
-        reply.file('./public/views/cart.html');
+        var assembledCartPage;
+
+        fs.readFile("./public/views/cart.html", "utf-8", function (err, data) {
+
+            if (err) {
+                console.log(err);
+            } else {
+                assembledCartPage = data.replace('<i id="item-name"></i>', '<i id="item-name">' + item +'</i>').replace('<span id="designer-name"></span>', '<span id="designer-name">' + designer + '</span>').replace('<span id="designer-name"></span>', '<span id="designer-name">' + designer + '</span>').replace('<img id="image-src" src="">', '<img id="image-src" src="' + image + '">').replace('<p id="item-price">£</p>', '<p id="item-price">£' + price + '</p>').replace('<img id="image-src" src="">', '<img id="image-src" src="' + image + '">').replace('<h3 class="total">TOTAL £</h3>', '<h3 class="total">TOTAL £' + price + '</h3>');
+                reply(assembledCartPage);
+            }
+        });
     },
 
     checkout: function(request, reply) {
-        reply.file('./public/views/checkout.html');
+        var assembledCheckoutPage;
+
+        fs.readFile("./public/views/checkout.html", "utf-8", function (err, data) {
+
+            if (err) {
+                console.log(err);
+            } else {
+                assembledCheckoutPage = data.replace('<input type="submit" value="Pay £">', '<input type="submit" value="Pay £' + price + '">');
+                reply(assembledCheckoutPage);
+            }
+        });
     },
 
     success: function(request, reply) {
@@ -90,7 +125,7 @@ module.exports = {
     },
 
     makeSale: function(request, reply) {
-        var amount = '10.00';
+        var amount = price;
         // var nonce = request.body.payment_method_nonce;
         var nonce = "fake nonce";
         var email = "msmichellecatherine@gmail.com";
