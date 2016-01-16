@@ -101,7 +101,17 @@ module.exports = {
     },
 
     checkout: function(request, reply) {
-        reply.file('./public/views/checkout.html');
+        var assembledCheckoutPage;
+
+        fs.readFile("./public/views/checkout.html", "utf-8", function (err, data) {
+
+            if (err) {
+                console.log(err);
+            } else {
+                assembledCheckoutPage = data.replace('<input type="submit" value="Pay £">', '<input type="submit" value="Pay £' + price + '">');
+                reply(assembledCheckoutPage);
+            }
+        });
     },
 
     success: function(request, reply) {
@@ -115,7 +125,7 @@ module.exports = {
     },
 
     makeSale: function(request, reply) {
-        var amount = '10.00';
+        var amount = price;
         // var nonce = request.body.payment_method_nonce;
         var nonce = "fake nonce";
         var email = "msmichellecatherine@gmail.com";
