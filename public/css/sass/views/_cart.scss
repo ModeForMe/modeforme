@@ -32,6 +32,17 @@
         text-align: left;
     }
 
+    button, input[type="submit"] {
+        background-color: #FAFAFA;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        padding: 10px 15px;
+        width: 300px;
+    }
+
     form {
         input[type="text"] {
             border: 1px solid lightgrey;
@@ -40,17 +51,6 @@
             margin: 10px 0;
             padding: 10px;
             width: 550px;
-        }
-
-        button, input[type="submit"] {
-            background-color: #FAFAFA;
-            border: 1px solid black;
-            cursor: pointer;
-            font-size: 22px;
-            letter-spacing: 1px;
-            margin-top: 20px;
-            padding: 10px 15px;
-            width: 300px;
         }
 
         p {
