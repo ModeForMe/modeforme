@@ -563,6 +563,22 @@ h4 {
     text-align: center; }
   .product-header .product-second .confirmation {
     text-align: center; }
+  .product-header .checkout-button .purchase-form input[type="text"] {
+    display: none; }
+  .product-header .checkout-button .purchase-form input[type="submit"] {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    padding: 15px 15px;
+    text-align: center;
+    width: 250px; }
+    .product-header .checkout-button .purchase-form input[type="submit"]:hover {
+      background-color: black;
+      color: white; }
 
 @media (max-width: 1300px) {
   .product-header .product-first {

@@ -1,6 +1,12 @@
 var braintree = require("./braintree.js");
 var mandrill = require("./mandrill.js");
 
+// variables for cart
+var item;
+var designer;
+var image;
+var price;
+
 module.exports = {
 
     home: function(request, reply) {
@@ -69,6 +75,14 @@ module.exports = {
 
     hemyca3: function(request, reply) {
         reply.file('./public/views/hemyca3.html');
+    },
+
+    clickPurchase: function(request, reply) {
+        item = request.payload.item;
+        designer = request.payload.designer;
+        image = request.payload.image;
+        price = request.payload.price;
+        reply.redirect("/cart");
     },
 
     cart: function(request, reply) {
